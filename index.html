@@ -1,179 +1,254 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>braytran | Portfolio</title>
+  <title>Bray Tran | Product Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <div class="page">
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-logo">braytran</div>
-    <ul class="nav-links">
-      <li><a href="#about">Giới thiệu</a></li>
-      <li><a href="#skills">Kỹ năng</a></li>
-      <li><a href="#projects">Dự án</a></li>
-      <li><a href="#contact">Liên hệ</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger">&#9776;</button>
-  </nav>
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <p class="hero-greeting">Xin chào, tôi là</p>
-      <h1 class="hero-name">braytran</h1>
-      <p class="hero-title" id="typed-text"></p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary">Xem dự án</a>
-        <a href="#contact" class="btn btn-outline">Liên hệ tôi</a>
+      <!-- Profile Photo -->
+      <div class="profile-photo">
+        <!-- To use your real photo: add file photo.jpg to the same folder -->
+        <img src="photo.jpg" alt="Bray Tran" onerror="this.style.display='none'" />
+        <div class="photo-initials">BT</div>
       </div>
-    </div>
-    <div class="hero-visual">
-      <div class="avatar-ring">
-        <div class="avatar-inner">
-          <span>B</span>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- About Section -->
-  <section class="section" id="about">
-    <div class="container">
-      <h2 class="section-title">Giới thiệu</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>Chào mừng đến với trang web của tôi! Tôi là một developer đam mê xây dựng những sản phẩm web hiện đại, tối ưu và thân thiện với người dùng.</p>
-          <p>Tôi luôn tìm cách học hỏi công nghệ mới và áp dụng vào các dự án thực tế, từ giao diện người dùng đến backend và triển khai hệ thống.</p>
+      <div class="sidebar-body">
+
+        <!-- CONTACT -->
+        <div class="sb-section">
+          <p class="sb-label">CONTACT</p>
+          <ul class="contact-list">
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+              <a href="mailto:tranphuong.des@gmail.com">tranphuong.des@gmail.com</a>
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.07 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+              <span>+84 39 782 6019</span>
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <a href="#">LinkedIn</a>
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+              <a href="#">Portfolio</a>
+            </li>
+          </ul>
         </div>
-        <div class="about-stats">
-          <div class="stat-card">
-            <span class="stat-number">5+</span>
-            <span class="stat-label">Năm kinh nghiệm</span>
+
+        <!-- SKILLS -->
+        <div class="sb-section">
+          <p class="sb-label">SKILLS</p>
+          <div class="skill-group">
+            <p class="skill-cat">Design</p>
+            <ul>
+              <li>UX Research</li>
+              <li>Design System</li>
+              <li>Design Concept</li>
+              <li>Usability Testing</li>
+              <li>Graphic Design</li>
+              <li>Agile / Scrum Framework</li>
+            </ul>
           </div>
-          <div class="stat-card">
-            <span class="stat-number">20+</span>
-            <span class="stat-label">Dự án hoàn thành</span>
+          <div class="skill-group">
+            <p class="skill-cat">Tool</p>
+            <ul>
+              <li>Figma</li>
+              <li>Illustrator</li>
+              <li>Jira / Confluence</li>
+              <li>Slack / Microsoft Teams</li>
+            </ul>
           </div>
-          <div class="stat-card">
-            <span class="stat-number">10+</span>
-            <span class="stat-label">Công nghệ sử dụng</span>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Skills Section -->
-  <section class="section section-dark" id="skills">
-    <div class="container">
-      <h2 class="section-title">Kỹ năng</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon">🌐</div>
-          <h3>Frontend</h3>
-          <p>HTML, CSS, JavaScript, React, Vue.js</p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">⚙️</div>
-          <h3>Backend</h3>
-          <p>Node.js, Python, REST API, GraphQL</p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">🗄️</div>
-          <h3>Database</h3>
-          <p>MySQL, PostgreSQL, MongoDB, Redis</p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">☁️</div>
-          <h3>DevOps</h3>
-          <p>Docker, GitHub Actions, Linux, CI/CD</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section class="section" id="projects">
-    <div class="container">
-      <h2 class="section-title">Dự án nổi bật</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-header" style="background: linear-gradient(135deg, #667eea, #764ba2);"></div>
-          <div class="project-body">
-            <h3>Demo Webpage</h3>
-            <p>Trang web portfolio cá nhân được xây dựng bằng HTML, CSS và JavaScript thuần, triển khai trên GitHub Pages.</p>
-            <div class="project-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
+        <!-- EDUCATION & CERTIFICATE -->
+        <div class="sb-section">
+          <p class="sb-label">EDUCATION & CERTIFICATE</p>
+          <div class="edu-item">
+            <div class="edu-badge fpt">FPT</div>
+            <div>
+              <p class="edu-name">FPT Polytechnic</p>
+              <p class="edu-sub">Bachelor of Graphic Design, 2020</p>
             </div>
-            <a href="https://github.com/braytran/demo-webpage" class="btn btn-small" target="_blank">Xem trên GitHub</a>
           </div>
-        </div>
-        <div class="project-card">
-          <div class="project-header" style="background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
-          <div class="project-body">
-            <h3>Web App Project</h3>
-            <p>Ứng dụng web full-stack với tính năng xác thực người dùng, quản lý dữ liệu và giao diện responsive.</p>
-            <div class="project-tags">
-              <span class="tag">React</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">MongoDB</span>
+          <div class="edu-item">
+            <div class="edu-badge google">G</div>
+            <div>
+              <p class="edu-name">Google</p>
+              <p class="edu-sub">UX Design Professional Certificate</p>
             </div>
-            <a href="#" class="btn btn-small">Xem chi tiết</a>
           </div>
         </div>
-        <div class="project-card">
-          <div class="project-header" style="background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
-          <div class="project-body">
-            <h3>API Service</h3>
-            <p>RESTful API service với tài liệu đầy đủ, xác thực JWT và rate limiting, sẵn sàng cho production.</p>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">Docker</span>
+
+        <!-- LANGUAGES -->
+        <div class="sb-section">
+          <p class="sb-label">LANGUAGES</p>
+          <div class="lang-item">
+            <span class="flag">🇻🇳</span>
+            <div>
+              <p class="lang-name">Vietnamese</p>
+              <p class="lang-level">Native</p>
             </div>
-            <a href="#" class="btn btn-small">Xem chi tiết</a>
+          </div>
+          <div class="lang-item">
+            <span class="flag">🇺🇸</span>
+            <div>
+              <p class="lang-name">English</p>
+              <p class="lang-level">Upper Intermediate</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section class="section section-dark" id="contact">
-    <div class="container">
-      <h2 class="section-title">Liên hệ</h2>
-      <div class="contact-wrapper">
-        <p class="contact-intro">Bạn có dự án muốn hợp tác? Hãy liên hệ với tôi!</p>
-        <div class="contact-links">
-          <a href="https://github.com/braytran" class="contact-card" target="_blank">
-            <span class="contact-icon">🐙</span>
-            <span>GitHub</span>
-          </a>
-          <a href="mailto:braytran@example.com" class="contact-card">
-            <span class="contact-icon">✉️</span>
-            <span>Email</span>
-          </a>
-          <a href="#" class="contact-card">
-            <span class="contact-icon">💼</span>
-            <span>LinkedIn</span>
-          </a>
+      </div>
+    </aside>
+
+    <!-- ===== MAIN ===== -->
+    <main class="main">
+
+      <!-- HERO -->
+      <section class="hero">
+        <h1 class="hero-name">BRAY TRAN,</h1>
+        <h2 class="hero-role">Product Designer</h2>
+        <p class="hero-bio">With nearly 5 years of experience in product design and development, I possess a strong analytical mindset, ensuring that designs are both strategic and aligned with business objectives. Highly adaptable to new environments and always ready to take on challenging tasks.</p>
+      </section>
+
+      <!-- MY KEYWORD -->
+      <section class="main-section">
+        <p class="main-label">MY KEYWORD</p>
+        <div class="kw-grid">
+          <div class="kw-card">
+            <p class="kw-title">Ice-Breaking</p>
+            <p class="kw-desc">Skilled at connecting team members and breaking down barriers between people.</p>
+          </div>
+          <div class="kw-card">
+            <p class="kw-title">Self-Management</p>
+            <p class="kw-desc">Effective time management, emotional control, planning, and organization.</p>
+          </div>
+          <div class="kw-card">
+            <p class="kw-title">Ownership</p>
+            <p class="kw-desc">Always prioritizing product quality and work results.</p>
+          </div>
+          <div class="kw-card">
+            <p class="kw-title">Leadership</p>
+            <p class="kw-desc">Capable of leading teams toward achieving common goals.</p>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2026 braytran. Được xây dựng với ❤️ và Claude Code.</p>
-  </footer>
+      <!-- EXPERIENCE -->
+      <section class="main-section">
+        <p class="main-label">EXPERIENCE</p>
 
+        <!-- MarkAny -->
+        <div class="job">
+          <p class="job-date">Aug 2024 - Present</p>
+          <h3 class="job-title">MarkAny - Product Designer</h3>
+
+          <div class="proj">
+            <div class="proj-icon" style="background:#5b4fcf">F</div>
+            <div class="proj-body">
+              <h4>SaForus - Web &amp; Responsive</h4>
+              <p>The project provides a unified technology solution but serves two distinct user groups. This led to the development of two separate products in parallel, making enhancements more effort-intensive for the team.</p>
+              <p class="resp">My Responsibility</p>
+              <ul>
+                <li>Combine the 2 existing products into a single, unified final design.</li>
+                <li>Revamped the final design, covering 15 key features.</li>
+                <li>Managed the English and Korean language versions.</li>
+                <li>Consolidated and restructured 2 separate Design Systems into 1.</li>
+                <li>Managed the homepage system built on Wix to support marketing and SEO objectives.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="proj">
+            <div class="proj-icon" style="background:#1e6ec8">S</div>
+            <div class="proj-body">
+              <h4>SecuAlign - Mobile App</h4>
+              <p>The project already had a web version and needed a mobile application built based on its existing features.</p>
+              <p class="resp">My Responsibility</p>
+              <ul>
+                <li>Product Design: Completed the final design, covering 5 key features.</li>
+                <li>Managed the English and Korean language versions.</li>
+                <li>Graphic Design: Created a complete set of Google Store screenshots.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- FPT Software -->
+        <div class="job">
+          <p class="job-date">Mar 2023 - Aug 2024</p>
+          <h3 class="job-title">FPT Software - UI/UX Designer</h3>
+
+          <div class="proj">
+            <div class="proj-icon" style="background:#e05c2a">T</div>
+            <div class="proj-body">
+              <h4>TPBank Digital Corporate Banking - Web &amp; Mobile App</h4>
+              <p>The product has many outdated features that require updates, and numerous new features need to be developed.</p>
+              <p class="resp">My Responsibilities</p>
+              <ul>
+                <li>Conduct a comprehensive product audit and provide a report with improvement recommendations.</li>
+                <li>Revamp and develop 26 features for the main product and 11 features for the Admin system.</li>
+                <li>Managed the entire design infrastructure, covering Web, Mobile Application, Admin Site, and Design System.</li>
+                <li>Project Lead, responsible for communication with the client.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="proj">
+            <div class="proj-icon multi">◆</div>
+            <div class="proj-body">
+              <h4>Other projects</h4>
+              <ul>
+                <li>Sacombank Omni Banking - Web &amp; Mobile App</li>
+                <li>Mubadala MIC - Mobile App</li>
+                <li>Internal - Culture &amp; Events</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Galaxy Education -->
+        <div class="job">
+          <p class="job-date">Feb 2022 - Feb 2023</p>
+          <h3 class="job-title">Galaxy Education - UIUX Designer</h3>
+
+          <div class="proj">
+            <div class="proj-icon" style="background:#0d7a6e">▲</div>
+            <div class="proj-body">
+              <h4>ICAN - Mobile App</h4>
+              <p>This is an application that enables students to solve math problems and check answers within 5 seconds by leveraging AI to analyze questions and provide the most accurate and timely results.</p>
+              <p class="resp">My Responsibilities</p>
+              <ul>
+                <li>Conduct user interviews to gather insights.</li>
+                <li>Create wireframes, user flows, and the final design.</li>
+                <li>Evaluate product performance based on user usability testing and Google Data Analytics.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Previous -->
+        <div class="job last">
+          <p class="job-date">Previous Employment (2019 - 2022)</p>
+          <h3 class="job-title">Pau's Collection - UI/UX Designer</h3>
+          <h3 class="job-title" style="margin-top:6px">Viettel Group - Graphic Designer</h3>
+        </div>
+
+      </section>
+    </main>
+
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
