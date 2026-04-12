@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Ocean -->
+  <circle cx="50" cy="50" r="44" fill="#85CED8"/>
+
+  <!-- Landmass: Africa + Europe -->
+  <path fill="#8BC96A" stroke="#2B3A5A" stroke-width="2.5" stroke-linejoin="round"
+    d="M50,18 C55,17 61,21 64,27 C68,34 69,43 66,52 C63,61 58,68 52,71
+       C47,74 42,71 39,65 C35,58 34,50 37,42 C39,35 43,26 50,18Z"/>
+
+  <!-- Landmass: South America -->
+  <path fill="#8BC96A" stroke="#2B3A5A" stroke-width="2.5" stroke-linejoin="round"
+    d="M23,38 C26,33 32,33 35,39 C38,45 37,54 34,61
+       C31,67 26,68 22,63 C18,58 18,50 20,44Z"/>
+
+  <!-- Landmass: North America (top-left) -->
+  <path fill="#8BC96A" stroke="#2B3A5A" stroke-width="2.5" stroke-linejoin="round"
+    d="M18,26 C21,21 28,22 31,28 C33,33 31,39 27,40
+       C23,41 17,37 18,26Z"/>
+
+  <!-- Landmass: bottom small (Australia-like) -->
+  <path fill="#8BC96A" stroke="#2B3A5A" stroke-width="2.5" stroke-linejoin="round"
+    d="M70,64 C73,61 77,63 77,68 C77,72 73,74 70,72 C67,70 67,66 70,64Z"/>
+
+  <!-- Outer border -->
+  <circle cx="50" cy="50" r="44" fill="none" stroke="#2B3A5A" stroke-width="6"/>
+</svg>
