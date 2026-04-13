@@ -17,7 +17,7 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   color: var(--text);
-  background: #fff;
+  background: #ede8e1;
   line-height: 1.6;
 }
 
@@ -30,6 +30,10 @@ ul { list-style: none; }
   display: grid;
   grid-template-columns: var(--sidebar-w) 1fr;
   min-height: 100vh;
+  max-width: 1024px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 60px rgba(0,0,0,0.10);
 }
 
 /* ===========================
@@ -367,16 +371,37 @@ ul { list-style: none; }
 /* ===========================
    RESPONSIVE
 =========================== */
+
+/* --- Tablet (≤860px): stack sidebar above main --- */
 @media (max-width: 860px) {
   .page {
     grid-template-columns: 1fr;
+    box-shadow: none;
   }
   .sidebar {
     border-right: none;
     border-bottom: 1px solid var(--border-lt);
   }
+  /* Sidebar body: two-column grid for sections */
+  .sidebar-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 24px;
+    padding: 20px 24px;
+  }
+  /* Contact spans full width */
+  .sb-section:first-child {
+    grid-column: 1 / -1;
+  }
   .profile-photo {
-    height: 220px;
+    height: 200px;
+  }
+  .hero {
+    padding: 28px 24px;
+    min-height: auto;
+  }
+  .main-section {
+    padding: 20px 24px;
   }
   .kw-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -384,16 +409,30 @@ ul { list-style: none; }
   .kw-card:nth-child(2) { border-right: none; }
   .kw-card:nth-child(3) { border-top: 1px solid var(--border); }
   .kw-card:nth-child(4) { border-top: 1px solid var(--border); }
-  .hero { padding: 28px 24px; min-height: auto; }
-  .main-section { padding: 20px 24px; }
 }
 
+/* --- Mobile (≤480px): single column, compact --- */
 @media (max-width: 480px) {
+  .sidebar-body {
+    grid-template-columns: 1fr;
+    padding: 16px 16px;
+  }
+  .sb-section:first-child {
+    grid-column: auto;
+  }
+  .profile-photo {
+    height: 180px;
+  }
+  .hero {
+    padding: 22px 16px;
+  }
+  .hero-name { font-size: 1.9rem; }
+  .hero-role { font-size: 1.3rem; }
+  .hero-bio  { font-size: 0.82rem; }
+  .main-section { padding: 16px 16px; }
   .kw-grid { grid-template-columns: 1fr; }
   .kw-card { border-right: none; border-top: 1px solid var(--border); }
   .kw-card:first-child { border-top: none; }
-  .hero-name { font-size: 2rem; }
-  .hero-role { font-size: 1.4rem; }
 }
 
 /* ===== PRINT ===== */
